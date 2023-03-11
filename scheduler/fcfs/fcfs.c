@@ -29,6 +29,7 @@ void run_fcfs(Fcfs* fcfs) {
         }
         Task* task = removing(fcfs->taskQueue);
         execute(task);
+        destruct(task);
         printf("[FCFS] Tasks em fila: %d\n", return_queue_quantity(fcfs->taskQueue));
     }
     printf("[FCFS] O escalonador FCFS terminou de executar todas as tasks em fila.\n");

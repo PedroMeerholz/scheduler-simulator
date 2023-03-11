@@ -39,5 +39,8 @@ void execute(Task* task) {
     printf("[TASK] Executando Task %d\n", task->id);
     sleep(task->size);
     printf("[TASK] Task %d finalizada\n", task->id);
+}
+
+void destruct(Task* task) {
     free(task);
 }
