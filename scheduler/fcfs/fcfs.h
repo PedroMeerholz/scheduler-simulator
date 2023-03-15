@@ -1,7 +1,7 @@
-#include "../../data-structures/task_queue/task_queue.h"
+#include "../../data-structures/cooperative_task_queue/cooperative_task_queue.h"
 
 typedef struct Fcfs_ Fcfs;
 
-Fcfs* create_fcfs(TaskQueue* taskQueue);
+Fcfs* create_fcfs(CooperativeTaskQueue* taskQueue);
 void run_fcfs(Fcfs* fcfs);
 void destruct_fcfs(Fcfs* fcfs);
